@@ -42,16 +42,9 @@ Add the following dependency to your `pom.xml`/`build.gradle` file:
 ## Start Using MySQL Container in Integration Test
 
 ```groovy
-import org.apache.http.HttpStatus
-import org.eclipse.jetty.server.Server
-import org.eclipse.jetty.servlet.ServletContextHandler
-import org.eclipse.jetty.servlet.ServletHolder
-import org.glassfish.jersey.servlet.ServletContainer
-import org.hamcrest.Matchers
 import org.testcontainers.containers.MySQLContainer
 import org.testcontainers.spock.Testcontainers
 
-import io.restassured.RestAssured
 import spock.lang.Shared
 import spock.lang.Specification
 

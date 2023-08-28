@@ -51,6 +51,7 @@ jobs:
           ./gradlew :testcontainers:check --no-daemon --continue --scan
 
   turbo-mode:
+    if: github.repository == 'testcontainers/testcontainers-java'
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
